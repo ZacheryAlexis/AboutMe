@@ -7,6 +7,7 @@ app.use(cors());
 
 app.options('*', cors());
 
+
 app.get('/Zachery',function(req,res){
     res.send({
         "Name": "Zachery",
@@ -29,7 +30,8 @@ app.get('/Cloud', function(req,res){
     });
 });
 
+let port = process.env.PORT || 3000;
 // Sets up the sever 
 app.listen(3000, function() {
-    console.log('Server running on port 3000!');
+    console.log(`Server running on port ${port}!`)
 });
