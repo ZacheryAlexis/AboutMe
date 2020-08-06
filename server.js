@@ -32,6 +32,6 @@ app.get('/Cloud', function(req,res){
 
 let port = process.env.PORT || 3000;
 // Sets up the sever 
-app.listen(3000, function() {
+app.listen(port, function() {
     console.log(`Server running on port ${port}!`)
 });
